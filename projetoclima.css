@@ -1,0 +1,176 @@
+@import url('https://fonts.google.com/share?selection.family=Jaro:opsz@6..72|Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900|Roboto+Mono:ital,wght@0,100..700;1,100..700|Yuji+Mai');
+
+:root {
+    --branco: #fff;
+    --preto: #000;
+    --bg-color1: #323b45;
+    --bg-color2: #101623;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(
+        180deg,
+        var(--bg-color1) 0%,
+        var(--bg-color2) 100%
+    );
+}
+
+#container {
+    background-color: cornsilk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    min-height: calc(100vh - 150px);
+    margin: 75px;
+    box-shadow: -10px 10px 40px rgba(0, 0, 0, 1.7);
+    border-radius: 20px;
+}
+
+.container_pesquisa {
+    display: flex;
+    background-image: url('../Imagens/Climaa.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    min-height: calc(100vh - 140px);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2); /* Efeito de vidro */
+    backdrop-filter: blur(10px);
+    padding: 10px 15px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#search i {
+    font-size: 18px;
+    color: #444;
+    margin-right: 8px;
+}
+
+#city_name {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    padding: 8px;
+    width: 200px;
+    color: #333;
+}
+
+#city_name::placeholder {
+    color: #666;
+}
+
+#search button {
+    background: #007bff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#search button i {
+    color: white;
+    font-size: 16px;
+}
+
+#search button:hover {
+    background: #0056b3;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 10px 15px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container_resultado {
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start; 
+    position: relative; 
+    max-width: 1500px;
+    min-height: calc(100vh - 140px);
+    border-radius: 20px;
+    padding: 20px;
+    overflow: hidden; 
+}
+
+#tittle {
+    width: 100%;
+    text-align: center; 
+    font-size: 1.5em; 
+    position: absolute; 
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#weather {
+    background-color:cornsilk;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 300px;
+    min-height: calc(100vh - 200px);
+}
+
+#other_infos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center; 
+    gap: 40px; 
+    width: 80%; 
+    max-width: 400px;
+    padding: 20px;
+}
+
+#temp {
+    display: flex;
+    align-items: center;
+}
+
+#temp_img {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#infos {
+    width: 100%;
+    text-align: left; 
+    font-size: 1.2em; 
+    padding: 8px 15px;
+    background-color: rgba(0, 0, 0, 0.05); 
+    border-radius: 20px; 
+}
+
+#ensolarado {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}

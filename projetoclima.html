@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Projeto Clima</title>
+    <link rel="stylesheet" href="./projetoclima.css">
+</head>
+    <body>
+        <div id="container">
+            <div class="container_pesquisa">
+                <form id="search">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="search" name="city_name" id="city_name" placeholder="Buscar cidade">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+                <div class="container_resultado">
+                    <div id="weather">
+                        <div>
+                            <div id="alert"></div>
+                        </div>
+                        <h1 id="tittle">Alterosa, MG</h1>
+                        <div id="infos">
+                            <div id="temp">
+                                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" id="temp_img">
+                                <div id="ensolarado">
+                                    <span>32°C Ensolarado</span>
+                                </div>
+                            </div>
+                            <div id="other_infos">
+                                <div>🌡️ Temp. max: 32°C</div>
+                                <div>🌡️ Temp. min: 12°C</div>
+                                <div>💧 Umidade: 50%</div>
+                                <div>🌬️ Vento: 50 Km/h</div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+        </div>
+        <script src="ProjetoClima.js"></script>
+    </body>
+</html>
